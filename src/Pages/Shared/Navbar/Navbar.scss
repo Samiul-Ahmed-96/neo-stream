@@ -5,7 +5,10 @@
   top: 0;
   width: 100%;
   z-index: 9999;
-  background-color: var(--main-color);
+  transition: 0.5s;
+  &.scroll {
+    background-color: var(--main-color);
+  }
   .container {
     display: flex;
     justify-content: space-around;

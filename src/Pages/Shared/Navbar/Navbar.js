@@ -1,11 +1,17 @@
 import { Notifications, Search } from '@mui/icons-material';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.scss';
 
 const Navbar = () => {
+    const [isScrolled , setIsScrolled] = useState(false);
+    window.onscroll = () =>{
+        setIsScrolled(window.pageYOffset === 0 ? false : true)
+        return () => window.onscroll = null;
+    }
+    
     return (
-        <div className="navbar">
+        <div className={isScrolled ? "navbar scroll" : "navbar"}>
             <div className="container">
                 <div className="left">
                     <img src="https://www.freepnglogos.com/uploads/netflix-logo-text-emblem-31.png" alt="" />
