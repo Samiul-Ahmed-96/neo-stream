@@ -4,4 +4,25 @@
   background: #fff;
   color: #000;
   margin-right: 5px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s;
+  .item-img {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    &:hover {
+      .item-actions {
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        background: #25213ca1;
+      }
+    }
+  }
 }
