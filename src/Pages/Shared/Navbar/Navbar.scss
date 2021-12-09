@@ -22,9 +22,13 @@
     .left {
       display: flex;
       align-items: center;
-      .menu span {
-        margin-left: 20px;
-        cursor: pointer;
+      .menu a {
+        text-decoration: none;
+        span {
+          margin-left: 20px;
+          cursor: pointer;
+          color: #fff;
+        }
       }
     }
     .right {

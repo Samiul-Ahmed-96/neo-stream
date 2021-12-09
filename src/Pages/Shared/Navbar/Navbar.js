@@ -1,6 +1,7 @@
 import { Notifications, Search } from '@mui/icons-material';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.scss';
 
 const Navbar = () => {
@@ -16,17 +17,18 @@ const Navbar = () => {
                 <div className="left">
                     <img src="https://www.freepnglogos.com/uploads/netflix-logo-text-emblem-31.png" alt="" />
                     <div className="menu">
-                    <span>Homepage</span>
-                    <span>Series</span>
-                    <span>Movies</span>
-                    <span>New and Popular</span>
-                    <span>My List</span>
+                    <Link to="/home"><span>Homepage</span></Link>
+                    <Link to="/series"><span>Series</span></Link>
+                    <Link to="/movies"><span>Movies</span></Link>
+                    <Link to="/newAndPopular"> <span>New and Popular</span></Link>
+                    <Link to="/myList"><span>My List</span></Link>
                     </div>
                 </div>
                 <div className="right">
+                <Link to="/login"><span>Login</span></Link>
                     <Search/>
                     <Notifications></Notifications>
-                    <img src="https://lh3.googleusercontent.com/TBTxvAhDtk4YpFz7kCTq6kB7Xcqe7gy9ZSO9ichsjsyIwTmcGZX8qgTq-tFP6JnRLwGV1wbCPsNfMvaqQ18aVZWuHt5J-0aU5CNw86BI6KcoBgCPdYYXsSY6qNfZwzN3mfqEkO3T0zNJKjj-3A_nFjh1r1yiKRPjmNV6GQ3Jzp1TtlYbEEC5UlqSC5hwEHodlcpOu4v4iPhLIAoagIJDFoPosBwxmxT0e7qgShv3QvS3o_iPtKCKJGwN0bEdDDPZ8elcBgDOBhmo0NR5b3RV9LRo11jFyIJ3fr-EMX39UaHgIfnyjQNpX_RBj9jeuV02C0HvYiQO15xei0gnPI5gOCAEkTLH7-98j2KxsLoHXwWhPtS1EvJmNBtomIu63dTuRYe5W9yPmUUp-P2CfQnC8zw6R15yTPO6SpdvCLg2cQIdDXrx-DQcPspWWCnRx_Kl8WXp1xrZymPvcK8MwHCYYKWrXfGioEGiFIPCLeUf-42MImoKw-VV_ZBd4tQ0MegElL8rxXJtNWXpUnwdw0Y4Uxt0I2hlFXs81eiWPUGQglly2P7xhas-QlZNc1BiktbskhTdtt9-MIFoFAjfgzHq4geI-QJupVwTSbMbmGMHellVj1GXVMsCwNDResg7n-GkSzH9D7zNucXz22DkUc3AOu-ct6JyzTKUlA3GjtbmQUAdwh_2vWe2-iK_E_R08Yj6NT2ZM9skuuedWV7ZBsX_yvg=w328-h354-no?authuser=0" alt="" />
+                    <img src="https://lh3.googleusercontent.com/95_1Sv0twkSjCZPmu71u81-GNVYg5w5h2NmFsYbKavfn4Ei3lLARzJ1Xo6am81vgZBfjIjuxKlAy1faJcud6Zgej6c5_G3cxcNi-tsQ80QjJN36HlPbzpl2XV_CB87Q2FDY3BFRCMkdZMh3diNefI-y8IpQ_zcDqFTNdibD4h5fAPmQfLvll4T2_gIhLkL9dOj1QIovv7pksW-_lN6-RkbrOieYJD9pdX6wwP3itaZDbZTxwCvZb59Dp-G4gzxb7PVv72VmLlRMIzBDfkVV0AzQH0fqrB1_Py76G-07fA38ev12HBf3OsOiHpmrlGwMN2UtQ_4JMAP8-TA-_EbqRBTb4D8t0d10M5fleEv8PO37fCciHMvhWS08iHaYsqjm0a4FcVSkYbI3FYT7VEWqQqpsfH0tS3dF0zvT6-k9_Lh1M9xcS6tA62yj5YdOC6K0e07xcJzw_RaRxOYPT7Xzmm_Bccb2izyfFT2eOr536hISIMXWNiMfs5qdP3VFmvim9YKZRe63iwPYbRborwMyyO6ckL05u1EqZNocL4VkSmQ5yacDkcQnUrjfiieobQqauCBIsLQbnlwPkt7PNHFseMsmr8QeDNT6VKoP28iPP0ty0b08K7UeUbt2S3mby740Qyukk_KHzJpzcejqRfqD7s4CfUY9-wSvJVLolqH6KHACR8pzNfLP36ZO660BvIW2f0bF0Mh0QxnkfDsAjWEJG3hQ=w709-h766-no?authuser=0" alt="" />
                     
                     <div className="profile">
                     <ArrowDropDownIcon/>
