@@ -26,6 +26,7 @@ const Navbar = () => {
                 </div>
                 <div className="right">
                 <Link to="/login"><span>Login</span></Link>
+                <Link to="/Watch"><span>Watch</span></Link>
                     <Search/>
                     <Notifications></Notifications>
                     <img src="https://lh3.googleusercontent.com/95_1Sv0twkSjCZPmu71u81-GNVYg5w5h2NmFsYbKavfn4Ei3lLARzJ1Xo6am81vgZBfjIjuxKlAy1faJcud6Zgej6c5_G3cxcNi-tsQ80QjJN36HlPbzpl2XV_CB87Q2FDY3BFRCMkdZMh3diNefI-y8IpQ_zcDqFTNdibD4h5fAPmQfLvll4T2_gIhLkL9dOj1QIovv7pksW-_lN6-RkbrOieYJD9pdX6wwP3itaZDbZTxwCvZb59Dp-G4gzxb7PVv72VmLlRMIzBDfkVV0AzQH0fqrB1_Py76G-07fA38ev12HBf3OsOiHpmrlGwMN2UtQ_4JMAP8-TA-_EbqRBTb4D8t0d10M5fleEv8PO37fCciHMvhWS08iHaYsqjm0a4FcVSkYbI3FYT7VEWqQqpsfH0tS3dF0zvT6-k9_Lh1M9xcS6tA62yj5YdOC6K0e07xcJzw_RaRxOYPT7Xzmm_Bccb2izyfFT2eOr536hISIMXWNiMfs5qdP3VFmvim9YKZRe63iwPYbRborwMyyO6ckL05u1EqZNocL4VkSmQ5yacDkcQnUrjfiieobQqauCBIsLQbnlwPkt7PNHFseMsmr8QeDNT6VKoP28iPP0ty0b08K7UeUbt2S3mby740Qyukk_KHzJpzcejqRfqD7s4CfUY9-wSvJVLolqH6KHACR8pzNfLP36ZO660BvIW2f0bF0Mh0QxnkfDsAjWEJG3hQ=w709-h766-no?authuser=0" alt="" />

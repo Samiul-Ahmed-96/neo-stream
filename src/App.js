@@ -3,6 +3,7 @@ import './App.scss';
 import Home from './Pages/Home/Home/Home';
 import Login from "./Pages/Login/Login";
 import Navbar from "./Pages/Shared/Navbar/Navbar";
+import Watch from "./Pages/Watch/Watch";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path='/' element={<Home/>}></Route>
           <Route path='/home' element={<Home/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
+          <Route path='/watch' element={<Watch/>}></Route>
        </Routes>
     </BrowserRouter>
   );
