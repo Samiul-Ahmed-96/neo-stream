@@ -1,10 +1,10 @@
 import { Grid } from '@mui/material';
 import React from 'react';
-import './Login.scss';
+import "./Register.scss";
 
-const Login = () => {
+const Register = () => {
     return (
-        <div className="login">
+        <div className="register">
            <Grid container >
                 <Grid md={12} sm={12}>
                     <div className="login-content">
@@ -13,11 +13,12 @@ const Login = () => {
                     <p>
                       Ready to watch? Enter your email to create or restart your membership.
                     </p>
-                    <h1>Login</h1>
+                    <h1>Register</h1>
                     <form>
+                        <input type="text" placeholder='Name' />
                         <input type="email" placeholder="Email" />
-                        <input type="email" placeholder="Password" />
-                        <input type="submit" value="Login" />
+                        <input type="password" placeholder="Password" />
+                        <input type="submit" value="Register" />
                     </form>
                     </div>
                 </Grid>
@@ -26,4 +27,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Register;
